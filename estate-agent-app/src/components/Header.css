@@ -5,23 +5,23 @@
     width: 100%;
 
 
-    background: rgba(255, 248, 222, 0.75);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 248, 222, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
     border-bottom: 1px solid rgba(140, 169, 255, 0.3);
 
 
 }
 
-.header-inner{
-    max-width: 1200px;
-    margine: 0 auto;
-    padding: 16px 24px;
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 40px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo span {
@@ -31,9 +31,9 @@
 }
 
 .logo img{
-    height: 40px;
+    height: 20px;
     width: auto;
-    display: block;
+    padding-right: 10px;
 }
 
 .nav-links a{

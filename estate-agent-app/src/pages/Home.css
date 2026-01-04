@@ -1,0 +1,48 @@
+.home-main {
+  background-color: rgba(170, 196, 245, 0.25);
+  min-height: calc(100vh - 80px);
+  padding-top: 50px;
+}
+
+.home-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+
+/* TEXT AREA */
+.home-text {
+  flex: 1;
+  padding: 80px 60px;
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #213547;
+}
+
+.home-text p {
+  font-size: 16px;
+  color: #444;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* IMAGE AREA */
+.home-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-image img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+
+    border-top-left-radius: 220px;
+    border-bottom-left-radius: 220px;
+}
+
