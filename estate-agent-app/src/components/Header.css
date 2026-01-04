@@ -5,11 +5,11 @@
     width: 100%;
 
 
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 248, 222, 0.75);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(140, 169, 255, 0.3);
 
 
 }
@@ -39,8 +39,12 @@
 .nav-links a{
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color:  #213547;
     font-size: 15px;
+}
+
+.nav-links a:hover {
+    color:#8CA9FF;
 }
 
 
