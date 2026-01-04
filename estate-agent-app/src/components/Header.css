@@ -2,9 +2,16 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+
 }
 
 .header-inner{
@@ -23,9 +30,17 @@
     color: #222;
 }
 
+.logo img{
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
 .nav-links a{
     margin-left: 20px;
     text-decoration: none;
     color: #333;
     font-size: 15px;
 }
+
+
