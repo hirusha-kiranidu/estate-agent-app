@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ function App() {
   const properties = propertiesData.properties;
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         {/* HOME PAGE */}
@@ -36,8 +36,8 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <Footer />
+    </HashRouter>
   );
 }
 

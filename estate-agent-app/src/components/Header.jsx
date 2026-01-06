@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Header.css";
 
@@ -7,24 +8,21 @@ function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <div className="logo">  
-          <img src="/images/logo.png" alt="EstateAgent logo" />
+        <div className="logo">
+          <img src={`${import.meta.env.BASE_URL}images/logo.png`} />
           <span>EstateAgent</span>
         </div>
 
         {/* Desktop Nav */}
         <nav className="nav-links">
-          <a href="/">Home</a>
-          <a href="/About">About</a>
-          <a href="/property">Properties</a>
-          <a href="/Contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/About">About</Link>
+          <Link to="/property">Properties</Link>
+          <Link to="/Contact">Contact</Link>
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </button>
       </div>
@@ -32,10 +30,18 @@ function Header() {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="mobile-nav">
-          <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/About" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="/property" onClick={() => setMenuOpen(false)}>Properties</a>
-          <a href="/Contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
+          <Link to="/About" onClick={() => setMenuOpen(false)}>
+            About
+          </Link>
+          <Link to="/property" onClick={() => setMenuOpen(false)}>
+            Properties
+          </Link>
+          <Link to="/Contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </Link>
         </nav>
       )}
     </header>

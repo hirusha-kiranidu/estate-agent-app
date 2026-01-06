@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -13,22 +14,21 @@ function Home() {
         </div>
 
         <div className="home-image">
-          <img src="/images/home-main.png" alt="Home illustration" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/home-main.png`}
+            alt="Home illustration"
+          />
         </div>
       </section>
 
       <section className="howto-section">
-
         {/* Center navigation button */}
-
         <div className="howto-cta">
-          <a href="/property"> Property</a>
+          <Link to="/property">Property</Link>
         </div>
         <h2 className="howto-title">How To Use</h2>
         <div className="howto-cardSection">
-
           {/* View Search Card */}
-
           <div className="howto-card">
             <h3>Search for Properties</h3>
             <p>
@@ -36,7 +36,7 @@ function Home() {
               number of bedrooms, date added, and postcode area. You can apply
               one or multiple criteria at the same time to refine your results.
             </p>
-            <a href="/property">Go to Search</a>
+            <Link to="/property">Go to Search</Link>
           </div>
 
           {/* View Favourites Card */}
@@ -48,7 +48,7 @@ function Home() {
               properties to your favourites list. This allows you to compare and
               revisit selected properties easily.
             </p>
-            <a href="/property">View Favourites</a>
+            <Link to="/property">View Favourites</Link>
           </div>
 
           {/* View Details Card */}
@@ -60,8 +60,7 @@ function Home() {
               price, location, and additional descriptions. Each property page
               provides a clear overview to support decision making.
             </p>
-            <a href="/property">View Details</a>
-
+            <Link to="/property">View Details</Link>
           </div>
         </div>
       </section>

@@ -137,10 +137,10 @@ function PropertyPage({ properties }) {
                 onDragStart={(e) =>
                   e.dataTransfer.setData("property", JSON.stringify(p))
                 }
-                onClick={() => window.open(`/property/${p.id}`, "_blank")}
+                onClick={() => window.open(`#/property/${p.id}`, "_blank")}
               >
                 <img
-                  src={`${window.location.origin}/${p.pictures[0]}`}
+                  src={`${import.meta.env.BASE_URL}${p.pictures[0]}`}
                   alt={p.id}
                 />
 
