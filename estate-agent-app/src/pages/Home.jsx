@@ -25,9 +25,9 @@ function Home() {
           <a href="/property"> Property</a>
         </div>
         <h2 className="howto-title">How To Use</h2>
-        <div className="howto-cards">
+        <div className="howto-cardSection">
 
-          {/* Search */}
+          {/* View Search Card */}
 
           <div className="howto-card">
             <h3>Search for Properties</h3>
@@ -36,10 +36,10 @@ function Home() {
               number of bedrooms, date added, and postcode area. You can apply
               one or multiple criteria at the same time to refine your results.
             </p>
-            <a href="/search">Go to Search</a>
+            <a href="/property">Go to Search</a>
           </div>
 
-          {/* Favourites */}
+          {/* View Favourites Card */}
 
           <div className="howto-card">
             <h3>Save to Favourites</h3>
@@ -48,10 +48,10 @@ function Home() {
               properties to your favourites list. This allows you to compare and
               revisit selected properties easily.
             </p>
-            <a href="/favourite">View Favourites</a>
+            <a href="/property">View Favourites</a>
           </div>
 
-          {/* Details */}
+          {/* View Details Card */}
 
           <div className="howto-card">
             <h3>View Property Details</h3>
@@ -60,7 +60,7 @@ function Home() {
               price, location, and additional descriptions. Each property page
               provides a clear overview to support decision making.
             </p>
-            <a href="/property/1">View Details</a>
+            <a href="/property">View Details</a>
 
           </div>
         </div>

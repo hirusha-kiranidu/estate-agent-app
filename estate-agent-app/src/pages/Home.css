@@ -1,5 +1,5 @@
 .home-main {
-  background-color: rgba(170, 196, 245, 0.25);
+  background-color: #c9e6f0;
   min-height: calc(100vh - 80px);
   padding-top: 50px;
 }
@@ -9,7 +9,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-
 
 /* TEXT AREA */
 .home-text {
@@ -38,18 +37,15 @@
 }
 
 .home-image img {
-    width: 420px;
-    height: 420px;
-    object-fit: cover;
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
 
-    border-top-left-radius: 220px;
-    border-bottom-left-radius: 220px;
+  border-top-left-radius: 220px;
+  border-bottom-left-radius: 220px;
 }
 
-
 /* MOBILE RESPONSIVE HOME */
-
-
 
 @media (max-width: 768px) {
   .home-section {
@@ -83,8 +79,6 @@
   }
 }
 
-
-
 /*  SECTION 2  */
 
 .howto-section {
@@ -92,7 +86,7 @@
   text-align: center;
 }
 
-/* CTA */
+/* Call To Action, CENTERED BUTTON */
 .howto-cta {
   margin-bottom: 30px;
 }
@@ -100,7 +94,7 @@
 .howto-cta a {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #8CA9FF;
+  background-color: #8ca9ff;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -115,7 +109,7 @@
 }
 
 /* Cards layout */
-.howto-cards {
+.howto-cardSection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -146,7 +140,7 @@
 .howto-card a {
   display: inline-block;
   padding: 8px 18px;
-  background-color: #AAC4F5;
+  background-color: #aac4f5;
   color: #213547;
   text-decoration: none;
   font-size: 14px;
@@ -164,7 +158,7 @@
     font-size: 26px;
   }
 
-  .howto-cards {
+  .howto-cardSection {
     grid-template-columns: 1fr;
   }
 
@@ -172,6 +166,3 @@
     text-align: center;
   }
 }
-
-
-

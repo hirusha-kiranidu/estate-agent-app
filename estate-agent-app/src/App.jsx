@@ -1,20 +1,42 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import SearchPage from "./pages/SearchPage";
-import PropertyPage from "./pages/PropertyPage";
-import Favourite from "./pages/Favourite"
 import Header from "./components/Header";
 
+import Home from "./pages/Home";
+import PropertyPage from "./pages/PropertyPage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import PropertyDetails from "./pages/PropertyDetails";
+import Footer from "./components/Footer";
+
+import propertiesData from "./data/properties.json";
+
 function App() {
+  const properties = propertiesData.properties;
+
   return (
     <BrowserRouter>
       <Header />
       <Routes>
+        {/* HOME PAGE */}
         <Route path="/" element={<Home />} />
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/property" element={<PropertyPage />} />
-        <Route path="/favourite" element={<Favourite />}></Route>
+
+        {/* PROPERTY PAGE */}
+        <Route
+          path="/property"
+          element={<PropertyPage properties={properties} />}
+        />
+
+        {/* PROPERTY DETAILS PAGE */}
+        <Route
+          path="/property/:id"
+          element={<PropertyDetails properties={properties} />}
+        />
+
+        {/* ABOUT PAGE AND THE CONTACCT PAGE */}
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

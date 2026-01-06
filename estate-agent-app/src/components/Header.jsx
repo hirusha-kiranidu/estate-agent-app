@@ -15,9 +15,9 @@ function Header() {
         {/* Desktop Nav */}
         <nav className="nav-links">
           <a href="/">Home</a>
-          <a href="/search">Search</a>
-          <a href="/property/1">Properties</a>
-          <a href="/favourite">Favourite</a>
+          <a href="/About">About</a>
+          <a href="/property">Properties</a>
+          <a href="/Contact">Contact</a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -33,9 +33,9 @@ function Header() {
       {menuOpen && (
         <nav className="mobile-nav">
           <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/search" onClick={() => setMenuOpen(false)}>Search</a>
-          <a href="/property/1" onClick={() => setMenuOpen(false)}>Properties</a>
-          <a href="/favourite" onClick={() => setMenuOpen(false)}>Favourite</a>
+          <a href="/About" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="/property" onClick={() => setMenuOpen(false)}>Properties</a>
+          <a href="/Contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
       )}
     </header>
